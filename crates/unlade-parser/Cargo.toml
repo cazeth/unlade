@@ -1,0 +1,17 @@
+[package]
+name = "unlade-parser"
+description = "Internal CSV parsing infrastructure for the unlade workspace"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+keywords = ["csv", "parser", "internal"]
+categories = ["development-tools", "parser-implementations"]
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+csv.workspace = true

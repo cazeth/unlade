@@ -1,0 +1,21 @@
+[package]
+name = "unlade-crates-parser"
+description = "Reads the crates.io crates.csv dump into unlade-core types"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+keywords = ["crates-io", "csv", "database", "parser"]
+categories = ["development-tools", "parser-implementations"]
+
+[lib]
+path = "lib.rs"
+
+[dependencies]
+jiff.workspace = true
+thiserror.workspace = true
+unlade-core = { version = "0.1.0", path = "../unlade-core" }
+unlade-parser.workspace = true

@@ -1,0 +1,25 @@
+[package]
+name = "unlade-cli"
+description = "Command line tool for listing crates from a crates.io dump"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme.workspace = true
+keywords = ["crates-io", "database", "analysis", "cli"]
+categories = ["command-line-utilities", "development-tools"]
+default-run = "unlade"
+
+[[bin]]
+name = "unlade"
+path = "main.rs"
+
+[dependencies]
+clap.workspace = true
+jiff.workspace = true
+miette.workspace = true
+unlade-core = { version = "0.1.0", path = "../unlade-core" }
+unlade-crates-parser = { version = "0.1.0", path = "../unlade-crates-parser" }
+unlade-dependencies-parser = { version = "0.1.0", path = "../unlade-dependencies-parser" }
